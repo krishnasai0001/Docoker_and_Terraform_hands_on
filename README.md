@@ -1,15 +1,11 @@
-# Docker Notes & Labs
+# My Cloud & DevOps Journey
 
-### Running an Nginx Server
-Command used to spin up a background web server:
-`docker run -d -p 8080:80 --name my-nginx nginx`
+This is my hands-on work where I track my learning, commands, and lab notes in core infrastructure tools. 
 
-* `-d`: Runs the container in the background (detached mode).
-* `-p 8080:80`: Maps port 8080 on my laptop to port 80 inside the container.
-* `--name`: Gives the container a recognizable name instead of a random string.
+### What's inside:
+* **01-linux**: Shell basics, system file structures, and core navigation.
+* **02-networking**: HTTP requests, REST API structures, and network routing.
+* **03-docker**: Container management, port forwarding, and image optimization.
+* **04-terraform**: Writing infrastructure as code to automate cloud setups.
 
-### Inspecting Nginx Configuration
-To jump inside the running container and read files, I used:
-`docker exec -it my-nginx /bin/bash`
-
-Inside the container, the core configuration file lives at `/etc/nginx/nginx.conf`. It handles worker connections, logs traffic locations, and includes modular config files from `/etc/nginx/conf.d/`.
+I update this repository while I learn and experiment with new concepts
