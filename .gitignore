@@ -1,0 +1,15 @@
+# ====================================================================
+# Terraform Git Ignore Rules
+# ====================================================================
+
+# Ignore the local hidden working directory and downloaded binaries
+.terraform/
+.terraform.lock.hcl
+
+# Ignore the secret local state tracking files
+*.tfstate
+*.tfstate.backup
+
+# Ignore local python virtual environments if present
+.venv/
+__pycache__/
